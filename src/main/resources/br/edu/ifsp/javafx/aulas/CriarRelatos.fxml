@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="99.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifsp.javafx.aulas.controller.CriarRelatoController">
+   <center>
+      <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="255.0" prefWidth="333.0" BorderPane.alignment="TOP_LEFT">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.0" minWidth="10.0" prefWidth="135.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="106.0" minWidth="10.0" prefWidth="87.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="122.0" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="178.0" minHeight="10.0" prefHeight="178.0" valignment="BASELINE" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="34.0" prefWidth="74.0" text="Nome:">
+               <GridPane.margin>
+                  <Insets left="20.0" top="10.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textRnome" layoutX="80.0" layoutY="150.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="260.0">
+               <GridPane.margin>
+                  <Insets left="122.0" right="-200.0" top="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label layoutX="20.0" layoutY="187.0" prefHeight="38.0" prefWidth="116.0" text="Descrição:" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <TextArea fx:id="textRDescricao" prefHeight="189.0" prefWidth="260.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="50.0" left="-10.0" right="-155.0" />
+               </GridPane.margin>
+            </TextArea>
+         </children>
+      </GridPane>
+   </center>
+   <top>
+      <Pane prefHeight="99.0" prefWidth="600.0" style="-fx-background-color: #102a43;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="25.0" layoutY="25.0" />
+            <Label alignment="CENTER" layoutX="226.0" layoutY="8.0" prefHeight="84.0" prefWidth="228.0" text="Relatos" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="3.0" prefHeight="41.0" prefWidth="176.0" text="Connect dengue" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <padding>
+                  <Insets top="-10.0" />
+               </padding>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </Pane>
+   </top>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnReCriar" mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #0d30bd;" text="CRIAR" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="150.0" top="30.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnReLimpar" mnemonicParsing="false" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #f53131;" text="LIMPAR" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="40.0" top="30.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnReEditar" mnemonicParsing="false" prefHeight="27.0" prefWidth="68.0" style="-fx-background-color: #0d30bd;" text="EDITAR" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="40.0" top="30.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnReExibir" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #0d30bd;" text="EXIBIR" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="40.0" top="30.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <right>
+      <VBox prefHeight="278.0" prefWidth="235.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="30.0" prefWidth="97.0" text="Você é:">
+               <VBox.margin>
+                  <Insets left="60.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="radioReAgente" mnemonicParsing="false" text="Agente de saúde" />
+            <RadioButton fx:id="radioReCidadao" mnemonicParsing="false" text="Cidadão">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="radioReAnonimo" mnemonicParsing="false" text="Anônimo">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </RadioButton>
+            <Label text="Sintomas:">
+               <VBox.margin>
+                  <Insets left="60.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="checkBoxDorCabeca" mnemonicParsing="false" text="Dor de cabeça" />
+            <CheckBox fx:id="checkBoxFebre" mnemonicParsing="false" text="Febre">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="checkBoxVomito" mnemonicParsing="false" text="Vômito">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </CheckBox>
+            <Separator prefWidth="200.0" />
+            <CheckBox fx:id="checkBoxDorArt" mnemonicParsing="false" text="Dor nas articulações" />
+            <CheckBox fx:id="checkBoxDorOlho" mnemonicParsing="false" text="Dor atrás dos olhos">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="checkBoxDiarreia" mnemonicParsing="false" text="Diarreia">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </CheckBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </right>
+</BorderPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifsp.javafx.aulas.controller.TabelaController">
+   <top>
+      <Pane prefHeight="99.0" prefWidth="600.0" style="-fx-background-color: #102a43;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutY="-1.0" prefHeight="97.0" prefWidth="228.0">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="194.0" text="Connect Dengue" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ImageView fitHeight="60.0" fitWidth="71.0">
+                     <image>
+                        <Image url="@../Desktop/dengue-home.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+            <Label layoutX="208.0" layoutY="17.0" text="Denúncia" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="265.0" layoutY="61.0" text="Dados" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <bottom>
+      <TableView fx:id="tabeladenuncias" prefHeight="368.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="75.0" text="Nome" />
+          <TableColumn fx:id="colIdentificacao" prefWidth="75.0" text="Identificação" />
+            <TableColumn fx:id="colLocal" prefWidth="75.0" text="Local" />
+            <TableColumn fx:id="colTipoLocal" prefWidth="75.0" text="Tipo de local" />
+            <TableColumn fx:id="colDescricao" prefWidth="75.0" text="Descrição" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </bottom>
+</BorderPane>
